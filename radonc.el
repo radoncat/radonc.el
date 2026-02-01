@@ -67,11 +67,11 @@ Keys:
     (insert
      (concat
       "Keys:\n"
-      "  n  add 1 fraction to Scheme 1\n"
-      "  p  remove 1 fraction from Scheme 1 (min 1)\n"
-      "  f  increase dose/fraction by 0.1 Gy (Scheme 1)\n"
-      "  b  decrease dose/fraction by 0.1 Gy (Scheme 1)\n"
-      "  q  quit window\n\n"))
+      "  <n>  add 1 fraction to Scheme 1\n"
+      "  <p>  remove 1 fraction from Scheme 1 (min 1)\n"
+      "  <f>  increase dose/fraction by 0.1 Gy (Scheme 1)\n"
+      "  <b>  decrease dose/fraction by 0.1 Gy (Scheme 1)\n"
+      "  <q>  quit window\n\n"))
 
     (dolist (sch radonc--schemes)
       (pcase-let ((`(,idx ,n ,d) sch))
