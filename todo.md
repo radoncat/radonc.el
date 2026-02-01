@@ -1,0 +1,1 @@
+- recalculate dose for a targed EQD2 - e.g. to reach 56 Gy on alpha/beta 3 while keeping the number of fractions constant
