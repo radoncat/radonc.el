@@ -3,7 +3,7 @@
 ;; Author: Paul Martin Putora  <pmp@radonc.at>
 ;; Maintainer: Paul Martin Putora <pmp@radonc.at>
 ;; URL: https://github.com/chradonc/radonc.el.git
-;; Version: 0.3
+;; Version: 0.34
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: tools, science, radiation oncology, radiobiology, equivalent dose, calculator
 
@@ -52,11 +52,11 @@
   "Major mode for EQD2/BED results.
 
 Keys:
-  n  add 1 fraction to Scheme 1
-  p  remove 1 fraction from Scheme 1 (min 1)
-  f  increase dose/fraction by 0.1 Gy (Scheme 1)
-  b  decrease dose/fraction by 0.1 Gy (Scheme 1)
-  q  quit window"
+  <n>  add 1 fraction to Scheme 1
+  <p>  remove 1 fraction from Scheme 1 (min 1)
+  <f>  increase dose/fraction by 0.1 Gy (Scheme 1)
+  <b>  decrease dose/fraction by 0.1 Gy (Scheme 1)
+  <q>  quit window"
   (setq buffer-read-only t))
 
 (defun radonc--render-results-buffer ()
