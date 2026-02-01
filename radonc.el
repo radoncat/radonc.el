@@ -1,5 +1,4 @@
 ;;; radonc.el --- Radiotherapy EQD2/BED calculator -*- lexical-binding: t; -*-
-
 ;; Author: Paul Martin Putora  <pmp@radonc.at>
 ;; Maintainer: Paul Martin Putora <pmp@radonc.at>
 ;; URL: https://github.com/chradonc/radonc.el.git
