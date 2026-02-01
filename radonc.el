@@ -3,7 +3,7 @@
 ;; Author: Paul Martin Putora  <pmp@radonc.at>
 ;; Maintainer: Paul Martin Putora <pmp@radonc.at>
 ;; URL: https://github.com/chradonc/radonc.el.git
-;; Version: 0.321
+;; Version: 0.32111
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: tools, science, radiation oncology, radiobiology, equivalent dose, calculator
 
