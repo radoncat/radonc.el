@@ -1,3 +1,3 @@
 - recalculate dose for a targed EQD2 - e.g. to reach 56 Gy on alpha/beta 3 while keeping the number of fractions constant
 - fix target BED or EQD2 and then change dose or fractions while keeping this target
-- add colors to fx and d
+- add asdf as keys

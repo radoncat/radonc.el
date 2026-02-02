@@ -75,9 +75,20 @@ Keys:
     (dolist (sch radonc--schemes)
       (pcase-let ((`(,idx ,n ,d) sch))
         (let ((D (* n d)))
-          (insert (format "Scheme %d\nNumber of fractions: %g\nDose per fraction: %.2f Gy\nTotal Dose: %.2f Gy\n"
-                          idx n d D))
-          (insert "-------------------------------------\n")
+
+					;          (insert (format "Scheme %d\nNumber of fractions: \t>> %g\nDose per fraction: \t>> %.2f ;Gy\nTotal Dose:\t\t>> %.2f Gy\n"
+;                          idx n d D))
+
+(insert
+ (format "Scheme %s\nNumber of fractions: \t>> %s \t\tx\nDose per fraction: \t>> %s \tGy\nTotal Dose:\t\t>> %s \tGy\n"
+         (propertize (format "%d" idx) 'face '(:foreground "yellow" :weight bold))
+         (propertize (format "%g" n)   'face '(:foreground "yellow" :weight bold))
+         (propertize (format "%.2f" d) 'face '(:foreground "yellow" :weight bold))
+         (propertize (format "%.2f" D) 'face '(:foreground "yellow" :weight bold))))
+
+
+	  
+	  (insert "-------------------------------------\n")
           (dolist (ab radonc--ab-list)
             (let* ((alpha-beta (car ab))
                    (color (cdr ab))
